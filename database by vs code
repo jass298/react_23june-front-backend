@@ -1,0 +1,45 @@
+var mySql = require('mysql2')
+
+var con = mySql.createConnection({
+host :'localhost' ,
+user : 'root' ,
+password :'root',
+database : 'one2025'// if already exit ,can used
+})
+
+// con.connect((err) =>{
+//     if(err)throw err;
+//     console.log('mysql connected...')
+//     con.query('create database one2025', (err,mydata)=>{
+//         if(err)throw err;
+//     console.log('database created.')  
+
+//     })
+// })
+
+
+// con.query('USE one2025',(err,mydata)=>{
+//         if(err) throw err ;
+//     console.log('table created...')
+// })
+
+
+// con.query('create table oneProduct(id int(10) ,name varchar(30),price decimal(10.5) ) ' , (err , myData) =>{
+//     if(err) throw err ;
+//     console.log('table created...')
+// })
+
+// con.query ('insert into oneProduct (id,name,price) values(2,"toothpaste",10)'  , (err , myData) =>{
+//     if(err) throw err ;
+//     console.log(' product inserted....')
+// })
+
+// con.query ('update oneProduct set  name="mobile" , price=100 where id=2 '  , (err , myData) =>{
+//     if(err) throw err ;
+//     console.log(' updated....')
+// })
+
+// con.query ('delete from oneProduct  where id=1 '  , (err , myData) =>{
+//     if(err) throw err ;
+//     console.log(' deleted....')
+// })
